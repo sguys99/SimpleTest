@@ -59,6 +59,7 @@ CSimpleTestDlg::CSimpleTestDlg(CWnd* pParent /*=nullptr*/)
 void CSimpleTestDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_LIST, m_event_list);
 }
 
 BEGIN_MESSAGE_MAP(CSimpleTestDlg, CDialogEx)
@@ -158,5 +159,7 @@ HCURSOR CSimpleTestDlg::OnQueryDragIcon()
 
 void CSimpleTestDlg::OnBnClickedMsgBtn()
 {
-	AfxMessageBox(_T("Button clicked!"));
+	//AfxMessageBox(_T("Button clicked!"));
+	int index = m_event_list.InsertString(-1, _T("Button clicked!!"));
+	m_event_list.SetCurSel(index);
 }

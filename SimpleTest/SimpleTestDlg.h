@@ -33,4 +33,5 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnBnClickedMsgBtn();
+	CListBox m_event_list;
 };
