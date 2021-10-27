@@ -169,4 +169,5 @@ void CSimpleTestDlg::OnBnClickedMsgBtn()
 void CSimpleTestDlg::OnBnClickedResetBtn()
 {
 	m_event_list.ResetContent();
+	AfxMessageBox(_T("Reset content!"));
 }
