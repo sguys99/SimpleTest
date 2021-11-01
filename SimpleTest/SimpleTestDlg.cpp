@@ -174,6 +174,12 @@ void CSimpleTestDlg::OnBnClickedMsgBtn()
 
 void CSimpleTestDlg::OnBnClickedResetBtn()
 {
+	int nCount = m_event_list.GetCount();
+	CString csMsg;
+	csMsg.Format(_T("Total %02d contents removed"), nCount);
+
 	m_event_list.ResetContent();
-	AfxMessageBox(_T("Reset content!"));
+	AfxMessageBox(csMsg);
+
+	m_nBtnClickCounter = 0;
 }
