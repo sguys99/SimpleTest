@@ -103,6 +103,7 @@ BOOL CSimpleTestDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 작은 아이콘을 설정합니다.
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
+	m_nBtnClickCounter = 0;
 
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
@@ -161,7 +162,12 @@ HCURSOR CSimpleTestDlg::OnQueryDragIcon()
 void CSimpleTestDlg::OnBnClickedMsgBtn()
 {
 	//AfxMessageBox(_T("Button clicked!"));
-	int index = m_event_list.InsertString(-1, _T("Button clicked!!"));
+	m_nBtnClickCounter++;
+
+	CString csMsg;
+	csMsg.Format(_T("Button clicked!! #%02d"), m_nBtnClickCounter);
+	
+	int index = m_event_list.InsertString(-1, csMsg);
 	m_event_list.SetCurSel(index);
 }
 
