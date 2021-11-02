@@ -179,7 +179,7 @@ void CSimpleTestDlg::OnBnClickedResetBtn()
 
 	if (IDYES == AfxMessageBox(_T("Clear contents?"), MB_YESNO))
 	{
-		csMsg.Format(_T("Total %02d contents removed"), nCount);
+		csMsg.Format(_T("Number of contents removed : %02d"), nCount);
 		m_event_list.ResetContent();
 
 		AfxMessageBox(csMsg);
