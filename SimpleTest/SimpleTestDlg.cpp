@@ -190,10 +190,5 @@ void CSimpleTestDlg::OnBnClickedResetBtn()
 
 int CSimpleTestDlg::AddNumbers(int n)
 {
-	int result = 0;
-
-	for (int i = 1; i < n + 1; i++)
-		result += i;
-
-	return result;
+	return n * (n + 1) / 2;
 }
