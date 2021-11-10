@@ -39,4 +39,6 @@ public:
 	afx_msg void OnBnClickedResetBtn();
 
 	int AddNumbers(int n);
+	CEdit m_edit_out;
+	afx_msg void OnBnClickedCntBtn();
 };
