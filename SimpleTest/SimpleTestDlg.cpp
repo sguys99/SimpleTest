@@ -203,3 +203,8 @@ void CSimpleTestDlg::OnBnClickedCntBtn()
 	strTmp.Format(_T("%d"), m_nBtnClickCounter);
 	m_edit_out.SetWindowTextW(strTmp);
 }
+
+int CSimpleTestDlg::CalcSum(int a, int b)
+{
+	return a + b;
+}

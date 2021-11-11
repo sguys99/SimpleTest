@@ -41,4 +41,5 @@ public:
 	int AddNumbers(int n);
 	CEdit m_edit_out;
 	afx_msg void OnBnClickedCntBtn();
+	int CalcSum(int a, int b);
 };
