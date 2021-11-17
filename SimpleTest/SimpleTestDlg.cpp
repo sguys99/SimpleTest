@@ -208,3 +208,18 @@ int CSimpleTestDlg::CalcSum(int a, int b)
 {
 	return a + b;
 }
+
+int CSimpleTestDlg::CalcSub(int a, int b)
+{
+	return a - b;
+}
+
+int CSimpleTestDlg::CalcMul(int a, int b)
+{
+	return a * b;
+}
+
+int CSimpleTestDlg::CalcDiv(int a, int b)
+{
+	return a / b;
+}
