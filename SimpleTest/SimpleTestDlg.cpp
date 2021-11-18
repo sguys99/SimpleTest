@@ -235,6 +235,14 @@ int CSimpleTestDlg::CalcPow(int a, int b)
 {
 	int result = 1;
 
+	try {
+		if (a == 0) throw a;
+	}
+
+	catch (int exception) {
+		return 0;
+	}
+
 	for (int i = 0; i < b; )
 	{
 		result = result * a;
