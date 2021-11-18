@@ -221,5 +221,5 @@ int CSimpleTestDlg::CalcMul(int a, int b)
 
 int CSimpleTestDlg::CalcDiv(int a, int b)
 {
-	return a / b;
+	return int(a / b);
 }
