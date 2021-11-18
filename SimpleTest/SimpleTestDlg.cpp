@@ -230,3 +230,15 @@ int CSimpleTestDlg::CalcDiv(int a, int b)
 
 	return int(a / b);
 }
+
+int CSimpleTestDlg::CalcPow(int a, int b)
+{
+	int result = 1;
+
+	for (int i = 0; i < b; )
+	{
+		result = result * a;
+	}
+
+	return result;
+}
