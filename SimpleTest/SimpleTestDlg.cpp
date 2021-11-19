@@ -221,5 +221,32 @@ int CSimpleTestDlg::CalcMul(int a, int b)
 
 int CSimpleTestDlg::CalcDiv(int a, int b)
 {
-	return a / b;
+	try {
+		if (b == 0) throw b;
+	}
+	catch (int exception) {
+		return 0;
+	}
+
+	return int(a / b);
+}
+
+int CSimpleTestDlg::CalcPow(int a, int b)
+{
+	int result = 1;
+
+	try {
+		if (a == 0) throw a;
+	}
+
+	catch (int exception) {
+		return 0;
+	}
+
+	for (int i = 0; i < b; )
+	{
+		result = result * a;
+	}
+
+	return result;
 }
