@@ -48,4 +48,5 @@ public:
 	int CalcPow(int a, int b);
 
 	int MulAll(int n);
+	int AddAll(int n);
 };

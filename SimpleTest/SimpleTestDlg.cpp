@@ -258,3 +258,8 @@ int CSimpleTestDlg::MulAll(int n)
 
 	return n * MulAll(n - 1);
 }
+
+int CSimpleTestDlg::AddAll(int n)
+{
+	return n * (n + 1) / 2;
+}
