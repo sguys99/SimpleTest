@@ -46,4 +46,6 @@ public:
 	int CalcMul(int a, int b);
 	int CalcDiv(int a, int b);
 	int CalcPow(int a, int b);
+
+	int MulAll(int n);
 };
