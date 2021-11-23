@@ -250,3 +250,16 @@ int CSimpleTestDlg::CalcPow(int a, int b)
 
 	return result;
 }
+
+int CSimpleTestDlg::MulAll(int n)
+{
+	if (n == 1)
+		return 1;
+
+	return n * MulAll(n - 1);
+}
+
+int CSimpleTestDlg::AddAll(int n)
+{
+	return n * (n + 1) / 2;
+}
